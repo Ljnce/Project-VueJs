@@ -357,10 +357,8 @@ export default {
             }
           }
         }
-
       }
     }
-
   }
 
   @media (max-width: 767px) {
@@ -505,5 +503,124 @@ export default {
       }
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container-photo {
+      height: 300px;
+      .top {
+        height: 320px;
+        width: 100%;
+        .top-sx {
+          height: 320px;
+          width: 50%;
+          font-size: 23px;
+        }
+      }
+    }
+    .hello {
+      height: 190px;
+    }
+    .container-cards {
+      display: flex;
+      justify-content:center;
+      flex-wrap: wrap;
+      width: 100vw;
+      .center {
+        width: 1200px;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card {
+          height: 180px;
+          width: 80%;
+          margin-bottom: 100px;
+          padding: 0 5px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+    }
+    .container-container {
+      font-size: 30px;
+      color: #f28400;
+      display: block;
+    }
+    .container-my-site {
+      width: 100vw;
+      height: 280px;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      .my-site {
+        height: 320px;
+        h2 {
+          font-size: 15px;
+        }
+        img {
+          height: 160px;
+          width: 290px;
+          margin-top: 40px;
+        }
+      }
+    }
+    .container-my-work {
+      background: none;
+      h2 {
+        text-align: center;
+        font-size: 16px;
+      }
+      .my-work-title {
+        height: 40px;
+        width: 80%;
+        text-align: center;
+      }
+      .my-work{
+        height: 450px;
+        width: 80%;
+        .look-this {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+            height: 160px;
+            width: 290px;
+            margin-bottom: 40px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .container-close {
+      font-size: 30px;
+      padding-top: 100px;
+      margin-right: 20px;
+      color: #f28400;
+      float: right;
+      display: block;
+    }
+    .container-bottom {
+      height: 550px;
+      .bottom {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        .container-grafico {
+          width: 80%;
+        }
+      }
+    }
+    .container-footer {
+      height:150px;
+      .foot-sx {
+        height: 100px;
+      }
+      .foot-dx {
+        height: 100px;
+      }
+    }
+
 
 </style>
