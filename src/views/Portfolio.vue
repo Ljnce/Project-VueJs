@@ -145,6 +145,7 @@ export default {
         height: 300px;
         width: 80%;
         background-size: cover;
+        background-position: top;
         .top-sx {
           height: 300px;
           width: 60%;
@@ -373,6 +374,7 @@ export default {
           height: 300px;
           width: 80%;
           background-size: cover;
+          background-position: -110px 0;
           .top-sx {
             font-size: 15px;
           }
@@ -387,6 +389,118 @@ export default {
               display:block;
             }
           }
+        }
+      }
+      .hello {
+        height: 140px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ok {
+          h2 {
+            font-size: 22px;
+          }
+        }
+      }
+      .container-cards {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        width: 100vw;
+        .center {
+          width: 1200px;
+          justify-content: center;
+          flex-wrap: wrap;
+          .card {
+            height: 180px;
+            width: 80%;
+            margin-bottom: 100px;
+            padding: 0 5px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            i {
+            font-size: 35px;
+            }
+          }
+        }
+      }
+      .container-my-site {
+        width: 100vw;
+        height: 280px;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        .my-site {
+          height: 320px;
+          h2 {
+            font-size: 15px;
+          }
+          img {
+            height: 160px;
+            width: 290px;
+            margin-top: 40px;
+            &:hover {
+              transform: scale(1.4);
+            }
+          }
+        }
+      }
+      .container-my-work {
+        background: none;
+        h2 {
+          text-align: center;
+          font-size: 16px;
+        }
+        .my-work-title {
+          height: 40px;
+          width: 80%;
+          text-align: center;
+        }
+        .my-work{
+          height: 450px;
+          width: 80%;
+          .look-this {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+              height: 160px;
+              width: 290px;
+              margin-bottom: 40px;
+              margin-left: 0;
+            }
+          }
+        }
+        .container-close {
+          font-size: 22px;
+          padding-top: 100px;
+          margin-right: 20px;
+          color: #f28400;
+          float: right;
+          display: block;
+        }
+        .container-bottom {
+          height: 400px;
+          margin-top: 0;
+          .skills {
+            height: 50px;
+            margin-bottom: 30px;
+          }
+          .bottom {
+            width: 80%;
+            .container-grafico {
+              width: 100px;
+            }
+          }
+        }
+        .container-footer {
+          height:120px;
+          padding-right: 10px;
         }
       }
     }
