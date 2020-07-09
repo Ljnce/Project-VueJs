@@ -3,6 +3,9 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Portfolio from "../views/Portfolio.vue";
 import Test from "../views/Test.vue";
+import DarkMode from "../views/DarkMode.vue";
+import Api from "../views/Api.vue";
+import Form from "../views/Form.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +24,21 @@ const routes = [
     path: "/test",
     name: "Test",
     component: Test
+  },
+  {
+    path: "/darkmode",
+    name: "Darkmode",
+    component: DarkMode
+  },
+  {
+    path: "/api",
+    name: "Api",
+    component: Api
+  },
+  {
+    path: "/form",
+    name: "Form",
+    component: Form
   },
   {
     path: "/about",

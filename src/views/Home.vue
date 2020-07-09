@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+  <div id="home">
     <h1>Benvenuto nel mio progetto Vue Js</h1>
+    <img alt="Vue logo" src="../assets/logo.png" />
   </div>
 </template>
 
@@ -12,3 +12,17 @@ export default {
 };
 
 </script>
+
+
+<style>
+
+#home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+</style>
