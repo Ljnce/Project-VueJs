@@ -4,8 +4,9 @@
     <router-link to="/portfolio"> Portfolio </router-link> |
     <router-link to="/test"> Test </router-link> |
     <router-link to="/darkmode"> Dark Mode </router-link> |
-    <router-link to="/api"> Api </router-link> |
-    <router-link to="/Form"> Form </router-link>
+    <router-link to="/Form"> Form </router-link> |
+    <router-link to="/api"> Halo 5 Mission </router-link> |
+    <router-link to="/Vehicles"> Vehicles Halo </router-link>
   </div>
 </template>
 

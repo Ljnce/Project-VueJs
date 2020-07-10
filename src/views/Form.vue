@@ -46,15 +46,15 @@ method="get"
 </p>
 
 <p>
-  <label for="movie">Favorite Movie</label>
+  <label for="movie">Favorite Game</label>
   <select
     id="movie"
     v-model="movie"
     name="movie"
   >
-    <option>Star Wars</option>
-    <option>Vanilla Sky</option>
-    <option>Atomic Blonde</option>
+    <option>Halo 2</option>
+    <option>Halo 3</option>
+    <option>Halo Reach</option>
   </select>
 </p>
 
@@ -107,5 +107,17 @@ export default {
   }
   }
 
-
 </script>
+
+<style>
+  #form {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    #app-form {
+
+    }
+  }
+</style>

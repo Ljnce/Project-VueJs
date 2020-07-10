@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-
+    <h1> FOOTER in progress </h1>
   </div>
 </template>
 
