@@ -2,6 +2,7 @@
   <div id="home">
     <h1>Benvenuto nel mio progetto Vue Js</h1>
     <img alt="Vue logo" src="../assets/logo.png" />
+    <h2> Scegli una pagina e naviga tra i miei test VueJs </h2>
   </div>
 </template>
 

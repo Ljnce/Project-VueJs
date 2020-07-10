@@ -11,6 +11,9 @@
 
 <script>
 
+export default {
+  name: "nav",
+}
 </script>
 
 <style lang="scss">

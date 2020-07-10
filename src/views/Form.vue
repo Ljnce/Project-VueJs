@@ -3,8 +3,8 @@
   <form
 id="app-form"
 @submit="checkForm"
-action="https://vuejs.org/"
-method="post"
+action="#/Api"
+method="get"
 >
 
 <p v-if="errors.length">
@@ -21,6 +21,16 @@ method="post"
     v-model="name"
     type="text"
     name="name"
+  >
+</p>
+
+<p>
+  <label for="email">Email</label>
+  <input
+    id="email"
+    v-model="email"
+    type="text"
+    name="email"
   >
 </p>
 

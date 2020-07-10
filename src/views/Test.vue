@@ -10,7 +10,16 @@
       </ul>
     </p>
     <div class="container-push">
-      <input v-model="test" name="test" placeholder="Inserisci un numero">
+    <p>
+      <label for="age">Age</label>
+      <input
+        id="age"
+        v-model="test"
+        type="number"
+        name="age"
+        min="0"
+      >
+    </p>
       <br>
       <button @click="numbers.push(test)"> Premi qui </button>
     </div>
@@ -18,7 +27,7 @@
         <p> {{number}} </p>
     </div>
     <div class="error">
-      <h1 @click="error" style=" color: red"> NON CLICCARE QUI </h1>
+      <h1 @click="error"> NON CLICCARE QUI </h1>
     </div>
   </div>
 </template>
@@ -26,7 +35,7 @@
 <script>
 
   export default {
-    name : "Test",
+    name : "test",
     data () {
       return {
         numbers : [],
@@ -48,7 +57,7 @@
 
 </script>
 
-<style>
+<style lang="scss">
 
 #test {
   height: 500px;
@@ -59,6 +68,7 @@
   .error {
     h1 {
       &:hover {
+        color: red;
         cursor: pointer;
       }
     }

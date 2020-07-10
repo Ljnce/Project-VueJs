@@ -524,13 +524,10 @@ export default {
       display: flex;
       justify-content:center;
       flex-wrap: wrap;
-      width: 100vw;
       .center {
-        width: 1200px;
-        justify-content: center;
-        flex-wrap: wrap;
+        width:100%;
         .card {
-          height: 180px;
+          height: 300px;
           width: 80%;
           margin-bottom: 100px;
           padding: 0 5px;
