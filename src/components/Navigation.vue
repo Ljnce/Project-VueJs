@@ -6,7 +6,8 @@
     <router-link to="/darkmode"> Dark Mode </router-link> |
     <router-link to="/Form"> Form </router-link> |
     <router-link to="/api"> Halo 5 Mission </router-link> |
-    <router-link to="/Vehicles"> Vehicles Halo </router-link>
+    <router-link to="/Vehicles"> Vehicles Halo </router-link> |
+    <router-link to="/Armor"> Halo Armour </router-link>
   </div>
 </template>
 

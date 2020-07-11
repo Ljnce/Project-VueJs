@@ -7,6 +7,7 @@ import DarkMode from "../views/DarkMode.vue";
 import Api from "../views/Api.vue";
 import Form from "../views/Form.vue";
 import Vehicles from "../views/Vehicles.vue";
+import Armor from "../views/Armor.vue";
 
 Vue.use(VueRouter);
 
@@ -40,6 +41,11 @@ const routes = [
     path: "/vehicles",
     name: "Vehicles",
     component: Vehicles
+  },
+  {
+    path: "/armor",
+    name: "Armor",
+    component: Armor
   },
   {
     path: "/form",

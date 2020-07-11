@@ -1,5 +1,5 @@
 <template>
-  <div id=portfolio>
+  <div id="portfolio">
 
     <header>
       <div class="container-header">
@@ -113,7 +113,6 @@ import BarChart from "../components/BarChart.vue";
 
 export default {
   name: "portfolio",
-  props: [ 'tick' ],
   data() {
     return {
       active: false,

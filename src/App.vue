@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <Navigation/>
-      <router-view :datas="datas" :cars="cars"/>
+      <router-view :datas="datas" :cars="cars" :skulls="skulls"/>
       <Footer />
   </div>
 </template>
@@ -18,14 +18,16 @@ export default {
     return {
       datas: null,
       cars: null,
+      skulls: null,
     }
   },
   mounted () {
     axios
     .get('https://www.haloapi.com/metadata/h5/metadata/campaign-missions', {
       headers: {
-      'Ocp-Apim-Subscription-Key': '',
-      "Content-Type": "application/json"
+      'Ocp-Apim-Subscription-Key': 'd66314df41554194b9c32cf1fe1ed73f',
+      "Content-Type": "application/json",
+      "Accept-Language": "en"
       }
     })
     .then(response => {
@@ -34,12 +36,22 @@ export default {
     axios
     .get('https://www.haloapi.com/metadata/h5/metadata/vehicles', {
       headers: {
-      'Ocp-Apim-Subscription-Key': '',
+      'Ocp-Apim-Subscription-Key': 'd66314df41554194b9c32cf1fe1ed73f',
       "Content-Type": "application/json"
       }
     })
     .then(response => {
     this.cars = response.data
+    }),
+    axios
+    .get('https://www.haloapi.com/metadata/h5/metadata/maps', {
+      headers: {
+      'Ocp-Apim-Subscription-Key': 'd66314df41554194b9c32cf1fe1ed73f',
+      "Content-Type": "application/json"
+      }
+    })
+    .then(response => {
+    this.skulls = response.data
     })
   },
   components: {

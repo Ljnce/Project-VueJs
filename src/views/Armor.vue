@@ -1,16 +1,15 @@
 <template>
-  <div id="halo">
+  <div id="skulls">
     <div class="halo-title">
-      <h1> Api HALO Vehicles </h1>
+      <h1> Api HALO 5 Maps </h1>
     </div>
-    <div class="halo-stamp" v-for="car in cars" :key="car.id">
+    <div class="halo-stamp" v-for="skull in skulls" :key="skull.id">
       <div class="halo-text">
-        <h1> <strong> {{car.name}} </strong> </h1>
-        <h2 style="font-style:italic"> Usable by player: {{car.isUsableByPlayer}} </h2>
-        <p> {{ car.description }} </p>
+        <h1> <strong> {{skull.name}} </strong> </h1>
+        <p> {{ skull.description}} </p>
       </div>
       <div class="halo-img">
-        <img :src="car.largeIconImageUrl" />
+        <img :src="skull.imageUrl" />
       </div>
     </div>
   </div>
@@ -19,15 +18,15 @@
 <script>
 
 export default {
-  name:"halo",
-  props: ['cars']
+  name:"skulls",
+  props: ['skulls']
 }
 
 </script>
 
 <style lang="scss">
 
-#halo {
+#skulls {
   min-height: 100vh;
   .halo-title {
     height: 200px;
@@ -65,7 +64,7 @@ export default {
 }
 
 @media (max-width: 767px) {
-  #halo {
+  #skulls {
     min-height: 100vh;
     .halo-title {
       height: 200px;
@@ -76,7 +75,7 @@ export default {
       justify-content: center;
     }
     .halo-stamp {
-      height:500px;
+      height:400px;
       display: flex;
       flex-direction: column;
       border-bottom:1px solid black;
