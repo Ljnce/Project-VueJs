@@ -25,7 +25,7 @@ export default {
     axios
     .get('https://www.haloapi.com/metadata/h5/metadata/campaign-missions', {
       headers: {
-      'Ocp-Apim-Subscription-Key': 'd66314df41554194b9c32cf1fe1ed73f',
+      'Ocp-Apim-Subscription-Key': '',
       "Content-Type": "application/json",
       "Accept-Language": "en"
       }
@@ -36,7 +36,7 @@ export default {
     axios
     .get('https://www.haloapi.com/metadata/h5/metadata/vehicles', {
       headers: {
-      'Ocp-Apim-Subscription-Key': 'd66314df41554194b9c32cf1fe1ed73f',
+      'Ocp-Apim-Subscription-Key': '',
       "Content-Type": "application/json"
       }
     })
@@ -46,7 +46,7 @@ export default {
     axios
     .get('https://www.haloapi.com/metadata/h5/metadata/maps', {
       headers: {
-      'Ocp-Apim-Subscription-Key': 'd66314df41554194b9c32cf1fe1ed73f',
+      'Ocp-Apim-Subscription-Key': '',
       "Content-Type": "application/json"
       }
     })
